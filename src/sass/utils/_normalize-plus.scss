@@ -1,0 +1,31 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    
+  
+    background-color: $fon-color;
+    color: $primary-text-color;
+  }
+  
+  body.modal-open {
+    overflow: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    margin: 0;
+  }
+  
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  button {
+    font: inherit;
+  }
