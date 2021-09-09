@@ -1,15 +1,25 @@
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-size: 12px;
-    
-  
+    font-weight: 500;
+    line-height: 1.6;
     background-color: $fon-color;
     color: $primary-text-color;
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    } 
   }
   
-  body.modal-open {
-    overflow: hidden;
+  img{
+    width: 100%;
+    height: auto;
+    display: block;
   }
+
   h1,
   h2,
   h3,
@@ -22,10 +32,16 @@ body {
     padding: 0;
     list-style: none;
   }
+
   a {
     text-decoration: none;
     color: inherit;
   }
+
   button {
     font: inherit;
+  } 
+
+   body.modal-open {
+    overflow: hidden;
   }
