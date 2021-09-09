@@ -24,6 +24,8 @@
   }
 
   .section__text{
+margin-bottom: 15px;
+
     font-family: Titan One;
     font-weight: 400;
     font-size: 18px;
@@ -33,7 +35,15 @@
     text-transform: uppercase;
     
     color: $accent-secondary-color;
-    
+
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 30px;
+line-height: 1.13;
+    }
   }
  .section__title{
   font-family: Titan One;
@@ -46,6 +56,14 @@
   text-transform: uppercase;
 
   color: $accent-primary-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+line-height: 1.14;
+  }
  }
 
 .section__title--invisible {
