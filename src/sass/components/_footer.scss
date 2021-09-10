@@ -47,6 +47,46 @@
 .footer__item--end {
   text-align: end;
 }
-.footer__socials {
-  margin-bottom: 40px;
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 65px;
+}
+.footer-copyright__item {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+}
+.footer {
+  position: relative;
+}
+.footer-box::after {
+  content: '';
+  position: absolute;
+  bottom: 28%;
+  left: 0;
+  width: 100%;
+
+  border: 1px solid #e1e1e1;
+}
+
+.footer__icons--github,
+.footer__icons--telegram,
+.footer__icons--facebook {
+  fill: $accent-light-color;
+}
+.footer__link {
+  border-radius: 50%;
+  background-color: #fea5bb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px;
+  transition: background-color $function-time;
+}
+.footer__link:hover,
+.footer__link:focus {
+  background-color: $accent-primary-color;
 }
