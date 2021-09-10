@@ -1,0 +1,240 @@
+.hero {
+    background-color: $bg-pink-color;
+    min-height: 420px;
+    @media screen and (min-width: 768px) {
+        min-height: 300px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-height: 570px;
+        padding-top: 82px;
+    }
+}
+
+.container--hero {
+    position: relative;
+}
+
+.hero__title-wrapper {
+    padding-top: 130px;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+        padding-top: 10px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 56px;
+    }
+}
+
+.hero__title {
+    font-family: 'Titan One', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-light-color;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1280px) {
+        font-size: 38px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        margin-bottom: 25px;
+    }
+}
+
+.hero__title--accent {
+    color: $accent-primary-color;
+    font-size: 48px;
+    @media screen and (min-width: 1280px) {
+        font-size: 58px;
+        letter-spacing: 0.04em;
+    }
+}
+
+.hero__button {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25em;
+    transition: background-color $function-time;
+    @media screen and (min-width: 1280px) {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+}
+
+.hero__button--accent {
+    background-color: $accent-primary-color;
+    color: $accent-light-color;
+    &:hover {
+        background-color: #d41342;
+    }
+}
+
+.hero__button--light {
+    background-color: $accent-light-color;
+    color: $accent-primary-color;
+    margin-left: 8px;
+    &:hover {
+        background-color: #ecebeb;
+    }
+}
+
+.hero__milk-wrapper {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: flex-end;
+        width: 230px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-left: -42px;
+        width: 418px;
+    }
+}
+
+.hero__content {
+    font-size: 8px;
+    margin-left: -4px;
+    line-height: 1.5;
+    color: $accent-light-color;
+    width: 230px;
+    @media screen and (min-width: 1280px) {
+        margin-left: 30px;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #FFFFFF;
+    }
+}
+
+.hero__read-more {
+    margin-top: 7px;
+    width: 18px;
+    height: 18px;
+    @media screen and (min-width: 1280px) {
+        margin-top: 20px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.hero__decoration-bg {
+    position: absolute;
+    top: 4%;
+    right: -25%;
+    width: 346px;
+    height: 344px;
+    background-color: $accent-secondary-color;
+    border-radius: 50%;
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+        right: 103px;
+        top: -68px;
+        width: 324px;
+        height: 322px;
+    }
+    @media screen and (min-width: 1280px) {
+        left: 391px;
+        top: -125px;
+        width: 538px;
+        height: 538px;
+    }
+}
+
+.hero__ice-cream {
+    position: absolute;
+    top: 6px;
+    right: 32%;
+    @media screen and (min-width: 768px) {
+        top: 32px;
+        left: 71px;
+    }
+    @media screen and (min-width: 1280px) {
+        top: 56px;
+        left: 119px;
+    }
+}
+
+.hero__girl {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 235px;
+        left: 259px;
+    }
+    @media screen and (min-width: 1280px) {
+        top: 381px;
+        left: 403px;
+    }
+}
+
+.calc-cards {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.calc-card:not(:last-child) {
+    margin-bottom: 13px;
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+    }
+}
+
+.calc-card {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.calc-card__number {
+    font-family: 'Titan One', sans-serif;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $accent-primary-color;
+    position: relative;
+    z-index: 3;
+    &::after {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $accent-light-color;
+        position: absolute;
+        top: -2px;
+        right: -10px;
+        z-index: -1;
+        @media screen and (min-width: 1280px) {
+            width: 30px;
+            height: 30px;
+            top: -10px;
+            right: -16px;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 46px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+    }
+}
+
+.calc-card__text {
+    display: block;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $accent-light-color;
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.28;
+    }
+}
