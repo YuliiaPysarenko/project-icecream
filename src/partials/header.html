@@ -1,17 +1,18 @@
 <header class="header" id="home">
-    <div class="container">
+    <div class="container container--header">
         <img class="logo-page" srcset="./images/hero-header/logo.png 1x,
              ./images/hero-header/logo-@2x.png 2x" src="./images/hero-header/logo.png" alt="логотип сайта">
         <svg class="icon-burger">
                 <use href="./images/icons.svg#icon-burger"></use>
             </svg>
         <nav class="main-nav">
-            <button class="btn btn--primary" type="button">Buy now <svg class="btn__icon">
+            <svg class="icon-close">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+            <button class="button button--light btn__menu" type="button">Buy now11 <svg class="btn__icon">
                     <use href="./images/icons.svg#icon-left"></use>
                 </svg></button>
-            <svg class="icon-close">
-                    <use href="./images/icons.svg#icon-close"></use>
-                </svg>
+
             <ul class="nav">
                 <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
                 <li class="nav__item"><a class="nav__link" href="#advantages">About us</a></li>
@@ -20,7 +21,7 @@
                 <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <button class="btn btn--primary" type="button">Buy now <svg class="btn__icon">
+        <button class="button button--light button-order-header" type="button" data-modal-open-buy-now>Buy now <svg class="btn__icon">
                 <use href="./images/icons.svg#icon-left"></use>
             </svg></button>
     </div>

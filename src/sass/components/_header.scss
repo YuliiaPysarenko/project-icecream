@@ -1,0 +1,118 @@
+.header {
+    background-color: $bg-pink-color;
+}
+
+.container--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    @media screen and (min-width: 768px) {
+        padding-top: 37px;
+    }
+}
+
+.logo-page {
+    @media screen and (min-width: 1280px) {
+        margin-left: -73px;
+    }
+}
+
+.icon-burger {
+    stroke: $accent-primary-color;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: stroke $function-time;
+    &:hover {
+        stroke: $accent-light-color;
+    }
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.icon-close {
+    stroke: $accent-primary-color;
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: stroke $function-time;
+    &:hover {
+        stroke: $accent-light-color;
+    }
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.main-nav {
+    display: none;
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.nav {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+    }
+}
+
+.nav__item:not(:last-child) {
+    @media screen and (min-width: 1280px) {
+        margin-right: 35px;
+    }
+}
+
+.btn__menu {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.nav__link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: $accent-light-color;
+    transition: color $function-time;
+    &:hover {
+        color: $accent-primary-color;
+    }
+}
+
+.button-order-header {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+        padding: 10px 28px;
+        border-radius: 22px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 14px 37px;
+    }
+}
+
+.btn__icon {
+    fill: transparent;
+    stroke: $accent-primary-color;
+    width: 20px;
+    height: 12px;
+    @media screen and (min-width: 768px) {
+        margin-left: 8px;
+        width: 8px;
+        height: 8px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-left: 13px;
+    }
+}
