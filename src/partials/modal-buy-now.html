@@ -1,0 +1,80 @@
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="buy-now">
+            <button class="buy-now__close" data-buy-now-close>
+                <svg class="buy-now__icon" height="18px" width="18px">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h2 class="buy-now__title">Order delicious</h2>
+            <form name="buy-now-form" class="buy-now__form">
+                <label class="buy-now__text" for="use-name">
+                    Name </label>
+                <div class="buy-now__blok">
+                    <input type="text" class="buy-now__edit" id="use-name" name="use-name">
+                    <svg class="buy-now__icons" height="24px" width="24px">
+                        <use href="./images/modal-icon.svg#icon-user"></use>
+                    </svg>
+                </div>
+
+                <label class="buy-now__text" for="product">
+                    Select product</label>
+                <div class="buy-now__blok">
+                    <select class="buy-now__edit" name="product" id="product">
+                        <option value="ice cream"selected>ice cream</option>
+                        <option value="ice coffee">ice coffee</option>
+                        <option value="milkshakes" >milkshakes</option>
+                    </select>
+                </div>
+
+                <label class="buy-now__text" for="tel">
+                    Phone number</label>
+                <div class="buy-now__blok">
+                    <input type="tel" class="buy-now__edit" name="tel" id="tel">
+                    <svg class="buy-now__icons" height="24px" width="24px">
+                        <use href="./images/modal-icon.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <label class="buy-now__text" for="address">
+                    Delivery address</label>
+                <div class="buy-now__blok">
+                    <input type="address" class="buy-now__edit" name="email" id="email">
+                    <svg class="buy-now__icons" height="24px" width="24px">
+                        <use href="./images/modal-icon.svg#icon-compass2"></use>
+                    </svg>
+                </div>
+
+                <label class="buy-now__text" for="email">
+                    Email</label>
+                <div class="buy-now__blok">
+                    <input type="email" class="buy-now__edit" name="email" id="email">
+                    <svg class="buy-now__icons" height="24px" width="24px">
+                        <use href="./images/modal-icon.svg#icon-envelop"></use>
+                    </svg>
+                </div>
+
+
+
+                <label class="buy-now__text buy-now__text--comment">
+                    Сomment
+                    <textarea name="comment" class="buy-now__comment" cols="30" rows="10"
+                        placeholder="Enter text"></textarea>
+                </label>
+
+
+                <div class="buy-now__control">
+
+                    <label class="buy-now__check">
+                        <input type="checkbox" name="treaty" class="check">
+                        <svg class="check__icon" height="15px" width="16px">
+                            <use href="./images/modal-icon.svg#icon-checkmark"></use>
+                        </svg>
+                        <p>I agree with the mailing and accept 
+                        <a href="" class="buy-now__link">terms of the contract</a>
+                   </p>
+                    </label>
+                    <button type="submit" class="button .button--accent ">to send</button>
+                </div>
+            </form>
+        </div>
+    </div>
