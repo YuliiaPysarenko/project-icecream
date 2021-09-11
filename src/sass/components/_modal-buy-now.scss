@@ -26,7 +26,12 @@
     border-bottom-left-radius: 10px;
   
     background: $bg-gray-color;
-    background-image: url(../images/modal/ice-cream.png);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.0),
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.0)
+    ), url(../images/modal/ice-cream500w.png);
     background-position: bottom;
     
     background-size: 87%;
@@ -38,6 +43,18 @@
       transform: translate(-50%, -400%);
     }
     
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:  linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.0),
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.0)
+    ),url('../images/modal/ice-cream1000w.png');
+}
+
     @media screen and (max-height: 500px) 
     {
         margin-top: 170px;
@@ -87,6 +104,7 @@ fill:$primary-text-color ;
   }
   
   .buy-now__title {
+    font-family: Titan One;
     margin-bottom: 12px;
     text-align: center;
   
@@ -216,16 +234,13 @@ fill: none;
 .check:checked + & {
   border: none;
  fill:$accent-primary-color;
- transition: fill $function-time;
+ transition: fill $function-time, border $function-time;
 }
  .product__point:hover &,
  .product__point:focus &{
   border:8px solid $accent-primary-color ;
  }
 }
-
-
-
   .buy-now__comment {
     width: 100%;
     height: 120px;
@@ -272,21 +287,21 @@ fill: none;
     letter-spacing: 0.025em;
     fill: $accent-light-color;
     cursor: pointer;
-    @media screen and (min-width: 1200px) 
+    padding: 2px 4px;
+
+      border-radius:  6px;
+     background-color:$accent-light-color ;
+    @media screen and (min-width: 1280px) 
     {
         font-size: 14px;
     }
   }
-.buy-now__text--check{
-  padding: 0 4px;
-
-      border-radius:  6px;
-     background-color:$accent-light-color ;
-  
+.buy-now__text-check{
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.01em;
 }
+
   .check {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -306,7 +321,7 @@ fill: none;
     }
   }
   
-  .check__icon {
+  .buy-now__checked {
     margin-right: 8px;
   
     border: 2px solid $primary-text-color;
@@ -325,23 +340,24 @@ fill: none;
     }
   }
   
-  .buy-now__submit {
-    padding: 10px 55px;
-    margin-top: 30px;
-  
-    border-radius: 4px;
-    border: none;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-  
-    cursor: pointer;
-    color: $accent-light-color;
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
  
+ .buy-now__submit{
+  border-radius: 22px;
+  border: none;
+  text-align: center;
+  padding: 6px 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3em;
+  background-color: $accent-primary-color;
+  color: $accent-light-color;
+  transition: background-color $function-time;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: #d35f7c;
+  }
+ }
 
 //---------------------------------------------------------------------------------------------------------------------
