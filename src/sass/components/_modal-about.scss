@@ -8,7 +8,7 @@
     z-index: 100;
 
     opacity: 1;
-    transition: opacity var(--transition-type);
+    transition: opacity $function-time;
 
     &.is-hidden {
         opacity: 0;
@@ -65,7 +65,7 @@
     width: 30px;
     height: 30px;
 
-    background: $bg-lightpink-color;
+    background: $accent-light-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 50%;
@@ -73,10 +73,11 @@
 }
 
 .about-modal__close-icon {
-    transition: fill var(--transition-type);
+    fill: $primary-text-color;
+    transition: fill $function-time;
 
     &:hover, 
     &:focus {
-        fill: var(--brand-color);
+        fill: $accent-primary-color;
     }
 }
