@@ -115,10 +115,34 @@
     margin-top: 7px;
     width: 18px;
     height: 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: $accent-light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $function-time;
+    &:hover,
+    &:focus {
+        background-color: $accent-secondary-color;
+    }
     @media screen and (min-width: 1280px) {
         margin-top: 20px;
         width: 26px;
         height: 26px;
+    }
+}
+
+.hero__read-more .btn__icon {
+    width: 8px;
+    height: 8px;
+    margin-left: 0;
+    fill: transparent;
+    stroke: $accent-primary-color;
+    transition: stroke $function-time;
+    &:hover,
+    &:focus {
+        stroke: $accent-light-color;
     }
 }
 
@@ -147,10 +171,10 @@
 
 .hero__ice-cream {
     position: absolute;
-    top: 6px;
+    top: -2px;
     right: 32%;
     @media screen and (min-width: 768px) {
-        top: 32px;
+        top: 30px;
         left: 71px;
     }
     @media screen and (min-width: 1280px) {
