@@ -1,15 +1,48 @@
-<div class=“backdrop”>
-    <div class=“modal”>
-        <button class=“modal__button-close”><svg class=“modal__icon-close”><use href="./images/icons.svg#icon-close"></use></svg></button>
-        <h2>Our Location</h2>
-        <div class=“map”></div>
-        <span>CAFE</span>
-        <p>Chicago</p>
-        <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        <p>New York</p>
-        <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        <span>FOODTRUCK</span>
-        <p>Los Angeles</p>
-        <p>Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+<div class="backdrop is-hidden" data-modal-contacts>
+    <div class="modal-contacts">
+        <button class="modal-contacts__button-close" data-contacts-close><svg class="modal-contacts__icon-close"><use href="./images/icons.svg#icon-close"></use></svg></button>
+        <h2 class="modal-contacts__title">Our Location</h2>
+        <div class="location-box">
+            <div id="map" class="map"></div>
+            <div class="text-box">
+                <span class="text-box__title">CAFE</span>
+                <p class="text-box__name">Chicago</p>
+                <p class="text-box__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <p class="text-box__name">New York</p>
+                <p class="text-box__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+                <span class="text-box__title">FOODTRUCK</span>
+                <p class="text-box__name">Los Angeles</p>
+                <p class="text-box__description">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+            </div>
+        </div>
     </div>
 </div>
+<script>
+    
+        function initMap() {
+                // The location 
+                const chicago = { lat: 41.97064185193681, lng: -87.67252902606086 };
+                const la = { lat: 34.06795388968647, lng: -118.21264706626333 };
+                const ny = { lat: 40.7086014430729, lng: -73.98933186851586 }; 
+                // The map
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 2,
+                    center: { lat: 40.48025388211728, lng: -101.42997305306888 }
+                });
+                // The marker
+                const marker = new google.maps.Marker({
+                    position: chicago,
+                    map: map,
+                });
+                const mark = new google.maps.Marker({
+                position: ny,
+                map: map,
+            });
+            const m = new google.maps.Marker({
+                position: la,
+                map: map,
+            });
+            }
+</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6J6sehOtLZtk0KJYgnOMui3NcrbzTCs&callback=initMap&libraries=&v=weekly"
+        async></script>
