@@ -21,7 +21,8 @@
   color: $accent-light-color;
   transition: background-color $function-time;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #d41342;
   }
 }
@@ -31,7 +32,8 @@
   color: $accent-primary-color;
   transition: background-color $function-time;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ecebeb;
   }
 }
