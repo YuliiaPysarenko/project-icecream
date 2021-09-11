@@ -1,6 +1,11 @@
 .hero {
     background-color: $bg-pink-color;
     min-height: 420px;
+    @media screen and (max-width: 768px) {
+        overflow: hidden;
+        padding-top: 93px;
+        width: 100vw;
+    }
     @media screen and (min-width: 768px) {
         min-height: 300px;
     }
@@ -12,6 +17,10 @@
 
 .container--hero {
     position: relative;
+    @media screen and (max-width: 768px) {
+        // overflow: hidden;
+        min-height: inherit;
+    }
 }
 
 .hero__title-wrapper {
@@ -152,18 +161,22 @@
     right: -25%;
     width: 346px;
     height: 344px;
-    background-color: $accent-secondary-color;
+    // background-color: $accent-secondary-color;
+    background-image: url('../images/hero-header/decorative-bg-header.png');
     border-radius: 50%;
+    background-size: 346px;
     z-index: 1;
     @media screen and (min-width: 768px) {
         right: 103px;
         top: -68px;
         width: 324px;
         height: 322px;
+        background-size: 324px;
     }
     @media screen and (min-width: 1280px) {
         left: 391px;
         top: -125px;
+        background-size: 538px;
         width: 538px;
         height: 538px;
     }
