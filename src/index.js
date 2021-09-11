@@ -20,21 +20,12 @@ import './sass/main.scss';
 
   })();
 
-  (() => {
-    const refs = {
-      openModalBtn: document.querySelector('[data-modal-open-about]'),
-      closeModalBtn: document.querySelector('[data-about-close]'),
-      modal: document.querySelector('[data-modal-about]'),
-
-})();
-
   
 (() => {
     const refs = {
       openModalBtn: document.querySelector('[data-modal-open-contacts]'),
       closeModalBtn: document.querySelector('[data-contacts-close]'),
       modal: document.querySelector('[data-modal-contacts]'),
-
     };
   
     refs.openModalBtn.addEventListener('click', toggleModal);
