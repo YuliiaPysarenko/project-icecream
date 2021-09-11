@@ -3,7 +3,7 @@
         <div class="buy-now">
             <button class="buy-now__close" data-buy-now-close>
                 <svg class="buy-now__icon" height="18px" width="18px">
-                    <use href="./images/icons.svg#icon-close"></use>
+                    <use href="./images/modal-icon.svg#icon-cross"></use>
                 </svg>
             </button>
             <h2 class="buy-now__title">Order delicious</h2>
@@ -26,7 +26,22 @@
                         <option value="milkshakes" >milkshakes</option>
                     </select>
                 </div>
-
+               
+                <div class="buy-now__group" role="group" aria-labelledby="newsletter-head">
+                    <p id="newsletter-head">Select product</p>
+                    <label class="buy-now__product" >
+                      <input type="checkbox" name="product" value="ice cream">
+                      ice cream
+                    </label>
+                    <label class="buy-now__product">
+                      <input type="checkbox" name="product" value="ice coffee">
+                      ice coffee
+                    </label>
+                    <label class="buy-now__product">
+                      <input type="checkbox" name="product" value=" milkshakes">
+                      milkshakes
+                    </label>
+                  </div>
                 <label class="buy-now__text" for="tel">
                     Phone number</label>
                 <div class="buy-now__blok">
