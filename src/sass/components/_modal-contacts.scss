@@ -1,0 +1,48 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  min-width: 220px;
+  background-color: $accent-light-color;
+  border-radius: 24px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+  overflow-y: scroll;
+  //   Tablet
+  @media screen and (min-width: 768px) {
+    min-width: 700px;
+  }
+  //   Desktop
+  @media screen and (min-width: 1280px) {
+    min-width: 1100px;
+  }
+}
+.modal__button-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  color: $accent-primary-color;
+  transition: background-color $function-time, border $function-time, color $function-time;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-primary-color;
+    border: $accent-primary-color;
+    color: $accent-light-color;
+  }
+}
+.modal__icon-close {
+  display: block;
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+}
