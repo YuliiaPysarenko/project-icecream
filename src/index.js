@@ -1,5 +1,8 @@
 import './sass/main.scss';
 
+
+
+
 (() => {
     const refs = {
       openModalBtn: document.querySelector('[data-modal-open-buy-now]'),
@@ -24,6 +27,7 @@ import './sass/main.scss';
       modal: document.querySelector('[data-modal-about]'),
 
 })();
+
   
 (() => {
     const refs = {
