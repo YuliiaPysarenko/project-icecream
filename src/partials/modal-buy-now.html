@@ -9,41 +9,15 @@
             <h2 class="buy-now__title">Order delicious</h2>
             <form name="buy-now-form" class="buy-now__form">
                 <label class="buy-now__text" for="use-name">
-                    Name </label>
+                    <span class="buy-now__label  "> Name</span> </label>
                 <div class="buy-now__blok">
                     <input type="text" class="buy-now__edit" id="use-name" name="use-name">
                     <svg class="buy-now__icons" height="24px" width="24px">
                         <use href="./images/icons.svg#icon-user"></use>
                     </svg>
                 </div>
-
-                <label class="buy-now__text" for="product">
-                    Select product</label>
-                <div class="buy-now__blok">
-                    <select class="buy-now__edit" name="product" id="product">
-                        <option value="ice cream"selected>ice cream</option>
-                        <option value="ice coffee">ice coffee</option>
-                        <option value="milkshakes" >milkshakes</option>
-                    </select>
-                </div>
-               
-                <div class="buy-now__group" role="group" aria-labelledby="newsletter-head">
-                    <p id="newsletter-head">Select product</p>
-                    <label class="buy-now__product" >
-                      <input type="checkbox" name="product" value="ice cream">
-                      ice cream
-                    </label>
-                    <label class="buy-now__product">
-                      <input type="checkbox" name="product" value="ice coffee">
-                      ice coffee
-                    </label>
-                    <label class="buy-now__product">
-                      <input type="checkbox" name="product" value=" milkshakes">
-                      milkshakes
-                    </label>
-                  </div>
                 <label class="buy-now__text" for="tel">
-                    Phone number</label>
+                    <span class="buy-now__label">Phone number</span></label>
                 <div class="buy-now__blok">
                     <input type="tel" class="buy-now__edit" name="tel" id="tel">
                     <svg class="buy-now__icons" height="24px" width="24px">
@@ -51,27 +25,53 @@
                     </svg>
                 </div>
                 <label class="buy-now__text" for="address">
-                    Delivery address</label>
+                    <span class="buy-now__label">Delivery address</span></label>
                 <div class="buy-now__blok">
                     <input type="address" class="buy-now__edit" name="email" id="email">
                     <svg class="buy-now__icons" height="24px" width="24px">
-                        <use href="./images/icons.svg#icon-compass2"></use>
+                        <use href="./images/icons.svg#icon-compass"></use>
                     </svg>
                 </div>
 
                 <label class="buy-now__text" for="email">
-                    Email</label>
-                <div class="buy-now__blok">
+                    <span class="buy-now__label">Email</span></label>
+                <div class="buy-now__blok buy-now__blok--margin ">
                     <input type="email" class="buy-now__edit" name="email" id="email">
                     <svg class="buy-now__icons" height="24px" width="24px">
                         <use href="./images/icons.svg#icon-envelop"></use>
                     </svg>
                 </div>
+                
+                <div class="product" role="group" aria-labelledby="newsletter-head">
+                <span id="newsletter-head" class="buy-now__label  ">Select product</span>                    
+                    <label class="product__point" >
+                      <input type="checkbox" name="product" value="ice cream" class="check">
+                        <svg class="product__check" height="60px" width="60px">
+                            <use href="./images/icons.svg#icon-checkmark"></use>
+                        </svg>
+                        <span class="product__text"> ice cream</span>
+                        
+                    </label>
+                    <label class="product__point">
+                      <input type="checkbox" name="product" value="ice coffee" class="check">
+                      <svg class="product__check" height="60px" width="60px">
+                        <use href="./images/icons.svg#icon-checkmark"></use>
+                    </svg>
+                    <span class="product__text">ice coffee</span>
+                      
+                    </label>
+                    <label class="product__point">
+                      <input type="checkbox" name="product" value=" milkshakes" class="check">
+                      <svg class="product__check" height="60px" width="60px">
+                            <use href="./images/icons.svg#icon-checkmark"></use>
+                        </svg>
+                        <span class="product__text">milkshakes</span>
+                       
+                    </label>
+                </div>
 
-
-
-                <label class="buy-now__text buy-now__text--comment">
-                    Сomment
+                <label class="buy-now__text">
+                    <span class="buy-now__label">Сomment</span>
                     <textarea name="comment" class="buy-now__comment" cols="30" rows="10"
                         placeholder="Enter text"></textarea>
                 </label>
@@ -84,11 +84,11 @@
                         <svg class="check__icon" height="15px" width="16px">
                             <use href="./images/icons.svg#icon-checkmark"></use>
                         </svg>
-                        <p>I agree with the mailing and accept 
+                        <p class="buy-now__text--check">I agree with the mailing and accept 
                         <a href="" class="buy-now__link">terms of the contract</a>
                    </p>
                     </label>
-                    <button type="submit" class="button .button--accent ">to send</button>
+                    <button type="submit" class="button button--accent ">to send</button>
                 </div>
             </form>
         </div>

@@ -1,11 +1,12 @@
 .backdrop {
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 0;
   
     width: 100%;
     height: 100%;
-  
+
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
     transition: opacity $function-time;
@@ -14,18 +15,17 @@
   }
   .buy-now {
     position: absolute;
-    z-index: 999;
     left: 50%;
-    top: 50%;
+    top: 0;
     
-    padding: 40px;
+    padding: 15px 40px;
   
     border-top-left-radius: 50px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 10px;
   
-    background: $accent-light-color;
+    background: $bg-gray-color;
     background-image: url(../images/modal/ice-cream.png);
     background-position: bottom;
     
@@ -42,7 +42,7 @@
     {
         margin-top: 170px;
     }
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 2%);
     transition: transform $function-time;
     width: 100vw;
     max-width: 450px;
@@ -77,7 +77,7 @@
     cursor: pointer;
   }
   .buy-now__icon {
-    fill: inherit;
+fill:$primary-text-color ;
     transition: fill $function-time;
   
     .buy-now__close:hover &,
@@ -91,29 +91,48 @@
     text-align: center;
   
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
+    -webkit-text-stroke: 0.2px $accent-light-color;
     line-height: 1.15;
     letter-spacing: 0.03em;
   
     color: $accent-primary-color;
+
+   
   }
   .buy-now__form {
     display: flex;
     flex-direction: column;
   }
   .buy-now__text {
-    margin-bottom: 4px;
-  
+    position: relative;
+  }
+  .buy-now__label{
+    position: absolute;
+    left: 5px;
+    top: -14px;
+
+padding: 0 4px;
+margin-bottom: -2px;
+
+border-top-left-radius: 6px ;
+    border-top-right-radius:  6px;
+   background-color:$accent-light-color ;
+
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
   }
+  
   .buy-now__blok {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  
+  .buy-now__blok--margin{
+    margin-bottom: 20px;
+  }
   .buy-now__edit {
+    
     width: 100%;
     height: 40px;
   
@@ -144,12 +163,74 @@
       fill: $accent-primary-color;
     }
   }
+  .product{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0;
+    margin-bottom: 20px;
+    border: 2px solid $accent-light-color;
+    border-radius: 6px;
+
+  }
+  .product__point{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    border: 1px solid $accent-primary-color;
+    border-radius: 3px;
+
+
+    &:nth-child(2){
+      background-color: $bg-pink-color;
+      background-image: url(../images/modal/product-1.png); 
+    }
+
+    &:nth-child(3){
+      background-color: $bg-brown-color;
+  background-image: url(../images/modal/product-2.png);
+    }
+
+    &:nth-child(4){
+      background-color: $bg-green-color;
+      background-image: url(../images/modal/product-3.png);
+    }
+  }
+
+.product__text{
+  padding: 0 4px;
+
+      border-radius:  6px;
+     background-color:inherit ;
+}
+.product__check{
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+fill: none;
+.check:checked + & {
+  border: none;
+ fill:$accent-primary-color;
+ transition: fill $function-time;
+}
+ .product__point:hover &,
+ .product__point:focus &{
+  border:8px solid $accent-primary-color ;
+ }
+}
+
+
+
   .buy-now__comment {
     width: 100%;
     height: 120px;
   
     padding: 12px 16px;
-    margin-top: 4px;
   
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -174,17 +255,17 @@
       color: rgba(117, 117, 117, 0.5);
     }
   }
-  .buy-now__text--comment {
-    margin-bottom: 20px;
-  }
+
   
   .buy-now__control {
     text-align: center;
   }
   .buy-now__check {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 9px;
   
     font-size: 12px;
     line-height: 1.16;
@@ -196,6 +277,16 @@
         font-size: 14px;
     }
   }
+.buy-now__text--check{
+  padding: 0 4px;
+
+      border-radius:  6px;
+     background-color:$accent-light-color ;
+  
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+}
   .check {
     position: absolute;
     clip: rect(0 0 0 0);
@@ -251,13 +342,6 @@
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-.buy-now__product{
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    background-size: contain;
-    background-image: url(../images/modal/product-1.png);
-}
+ 
 
 //---------------------------------------------------------------------------------------------------------------------
