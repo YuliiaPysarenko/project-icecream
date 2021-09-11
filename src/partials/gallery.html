@@ -1,6 +1,21 @@
-<section class="section">
-    <div class="container">
-        
-    
-    </div>
+<section class="section section__color--change">
+  <div class="container">
+    <picture>
+      <source
+        srcset="./images/gallery/gallery1x1280px.jpg 1x, ./images/gallery/gallery2x1280px.jpg 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/gallery/gallery1x364px.jpg 1x, ./images/gallery/gallery2x364px.jpg 2x"
+        media="(max-width: 767px)"
+      />
+
+      <source
+        srcset="./images/gallery/gallery1x786px.jpg 1x, ./images/gallery/gallery2x786px.jpg 2x"
+        media="(min-width: 768px)"
+      />
+
+      <img src="./images/gallery/gallery1x364px.jpg" alt="." />
+    </picture>
+  </div>
 </section>
