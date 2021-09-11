@@ -7,11 +7,6 @@
 .advantages {
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-right: -80px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    margin-right: -100px;
   }
 }
 
@@ -55,10 +50,14 @@
 
   /* Tablet */
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 3 - 80px);
-    margin-right: 80px;
+    flex-basis: calc((100% - 60px * 2) / 3);
+    margin-right: 60px;
     font-size: 14px;
     line-height: 1.7em;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &::before {
       margin-bottom: 36px;
@@ -67,10 +66,14 @@
 
   /* Desktop */
   @media screen and (min-width: 1280px) {
-    flex-basis: calc(100% / 3 - 100px);
-    margin-right: 100px;
+    flex-basis: calc((100% - 90px * 2) / 3);
+    margin-right: 90px;
     font-size: 16px;
     line-height: 1.75em;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &::before {
       margin-bottom: 40px;
@@ -81,10 +84,10 @@
 .advantages__label {
   display: block;
   font-family: Titan One;
+  font-weight: 400;
   font-size: 36px;
   line-height: 1.14em;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: $accent-primary-color;
   margin-bottom: 18px;
 

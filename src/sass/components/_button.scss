@@ -19,7 +19,10 @@
 .button--accent {
   background-color: $accent-primary-color;
   color: $accent-light-color;
-  &:hover {
+  transition: background-color $function-time;
+
+  &:hover,
+  &:focus {
     background-color: #d41342;
   }
 }
@@ -27,8 +30,10 @@
 .button--light {
   background-color: $accent-light-color;
   color: $accent-primary-color;
+  transition: background-color $function-time;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #ecebeb;
   }
 }

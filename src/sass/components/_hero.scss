@@ -1,6 +1,11 @@
 .hero {
     background-color: $bg-pink-color;
     min-height: 420px;
+    @media screen and (max-width: 768px) {
+        overflow: hidden;
+        padding-top: 93px;
+        width: 100vw;
+    }
     @media screen and (min-width: 768px) {
         min-height: 300px;
     }
@@ -12,6 +17,10 @@
 
 .container--hero {
     position: relative;
+    @media screen and (max-width: 768px) {
+        // overflow: hidden;
+        min-height: inherit;
+    }
 }
 
 .hero__title-wrapper {
@@ -115,10 +124,34 @@
     margin-top: 7px;
     width: 18px;
     height: 18px;
+    border-radius: 50%;
+    border: none;
+    background-color: $accent-light-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $function-time;
+    &:hover,
+    &:focus {
+        background-color: $accent-secondary-color;
+    }
     @media screen and (min-width: 1280px) {
         margin-top: 20px;
         width: 26px;
         height: 26px;
+    }
+}
+
+.hero__read-more .btn__icon {
+    width: 8px;
+    height: 8px;
+    margin-left: 0;
+    fill: transparent;
+    stroke: $accent-primary-color;
+    transition: stroke $function-time;
+    &:hover,
+    &:focus {
+        stroke: $accent-light-color;
     }
 }
 
@@ -128,18 +161,22 @@
     right: -25%;
     width: 346px;
     height: 344px;
-    background-color: $accent-secondary-color;
+    // background-color: $accent-secondary-color;
+    background-image: url('../images/hero-header/decorative-bg-header.png');
     border-radius: 50%;
+    background-size: 346px;
     z-index: 1;
     @media screen and (min-width: 768px) {
         right: 103px;
         top: -68px;
         width: 324px;
         height: 322px;
+        background-size: 324px;
     }
     @media screen and (min-width: 1280px) {
         left: 391px;
         top: -125px;
+        background-size: 538px;
         width: 538px;
         height: 538px;
     }
@@ -147,10 +184,10 @@
 
 .hero__ice-cream {
     position: absolute;
-    top: 6px;
+    top: -2px;
     right: 32%;
     @media screen and (min-width: 768px) {
-        top: 32px;
+        top: 30px;
         left: 71px;
     }
     @media screen and (min-width: 1280px) {
