@@ -1,0 +1,78 @@
+.reviews {
+    padding-bottom: 0px;
+}
+.reviews__img {
+  margin: 0 auto 30px auto;
+}
+
+.reviews__comment {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+    width: 280px;
+    height: 308px;
+    margin: 0 auto 0 auto;
+    padding-top: 43px;
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 28px;
+        left: 61px;
+        width: 54px;
+        height: 40px;
+        background-image: url(/images/customer-reviews/quotes.svg);
+    }
+    
+}
+
+.reviews__paragraph {
+    position: absolute;
+    z-index: 2;
+    width: 157px;
+    line-height: 2.55;
+    text-align: center;
+    color: $secondary-text-color;
+    
+    background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, $bg-gray-color 30px);
+
+    
+}
+
+.reviews__title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.9;
+    text-align: center;
+    color: $secondary-text-color;
+
+    &::before {
+        display: block;
+      
+        content: "";
+        height: 4px;
+        width: 32px;
+        margin: 30px auto 18px auto;
+        background-image: url(/images/customer-reviews/group8.svg);
+
+    }
+}
+
+.reviews__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 72px;
+    margin: 30px auto 0px auto;
+}
+
+.reviews__icon {
+    height: 12px;
+    width: 12px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+.reviews__home {
+    fill: #D31342;
+}
