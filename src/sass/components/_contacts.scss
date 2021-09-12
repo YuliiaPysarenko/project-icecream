@@ -97,10 +97,10 @@
     font-size: 16px;
   }
 }
-.contacts__timework__day {
+.timework__day {
   color: $secondary-text-color;
 }
-.contacts__timework__time {
+.timework__time {
   color: $accent-secondary-color;
   &:not(:last-child) {
     margin-bottom: 10px;
