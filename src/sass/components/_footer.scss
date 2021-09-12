@@ -94,7 +94,7 @@
   @media screen and(max-width:767px) {
     max-width: 200px;
   }
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) and(max-width:1279) {
     max-width: 340px;
   }
 }
@@ -118,7 +118,7 @@
     bottom: 20%;
   }
   @media screen and(min-width:1280px) {
-    bottom: 10%;
+    bottom: 13%;
   }
 }
 
