@@ -19,7 +19,10 @@
   color: $secondary-text-color;
 }
 
-.modal-franchise__link {
+.order-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   position: relative;
   padding-top: 20px;
   &::before {
@@ -30,4 +33,9 @@
     top: -2%;
     border-top: 1px solid #eee;
   }
+}
+
+.modal-franchise__button {
+  padding-left: 25px;
+  padding-right: 25px;
 }
