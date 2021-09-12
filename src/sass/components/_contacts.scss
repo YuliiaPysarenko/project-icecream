@@ -119,6 +119,8 @@
   padding-bottom: 25px;
 }
 .contacts__link {
+  display: flex;
+  flex-direction: column;
   padding-top: 25px;
 }
 .contacts__button {
@@ -146,10 +148,35 @@
 
 .button--contacts {
   padding: 12px 17px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     padding: 12px 30px;
   }
   @media screen and (min-width: 1280px) {
     padding: 12px 35px;
+  }
+}
+.icon--left {
+  fill: transparent;
+  margin-left: 15px;
+  stroke: $accent-primary-color;
+}
+.icon--left--lite {
+  fill: transparent;
+  margin-left: 15px;
+  stroke: $accent-light-color;
+}
+.button {
+  display: flex;
+  align-items: center;
+  // padding-left: 40px;
+  // padding-right: 40px;
+  transition: background-color $function-time;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    cursor: pointer;
   }
 }
