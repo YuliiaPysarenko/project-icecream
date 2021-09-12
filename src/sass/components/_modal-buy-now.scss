@@ -67,6 +67,10 @@
     align-items: center;
     cursor: pointer;
     background-color: #fff5f6;
+     &:focus,
+     &:hover{
+      background-color: $accent-primary-color;
+     }
   }
   .buy-now__icon {
     stroke: $accent-primary-color;
@@ -76,7 +80,7 @@
   
     .buy-now__close:hover &,
     .buy-now__close:focus & {
-     stroke: $accent-secondary-color;
+     stroke: $accent-light-color;
     }
   }
   
