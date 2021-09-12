@@ -21,6 +21,7 @@
 
 .order-box {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
@@ -32,6 +33,15 @@
     width: 100%;
     top: -2%;
     border-top: 1px solid #eee;
+  }
+
+  @media screen and (min-width: 767px) {
+    flex-direction: row;
+  }
+}
+.modal-franchise__link {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
 
