@@ -1,11 +1,28 @@
-.header {
+.hero-header-wrapper {
     background-color: $bg-pink-color;
+}
+
+.container--hero-header {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url('../images/hero-header/hero-ice-cream-w236.png'), url('../images/hero-header/decorative-bg-header.png');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/hero-header/hero-ice-cream-w236-@2x.png'), url('../images/hero-header/decorative-bg-header-@2x.png');
+    }
     @media screen and (max-width: 767px) {
-        position: fixed;
-        z-index: 5;
-        width: 100%;
-        background-color: $bg-pink-color;
-        width: 100vw;
+        min-height: 495px;
+        background-size: 171px, 346px;
+        background-position: 80% 92px, right -50px top 83px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        min-height: 393px;
+        background-size: 143px, 324px;
+        background-position: 344px 63px, 273px 31px;
+    }
+    @media screen and (min-width: 1280px) {
+        min-height: 665px;
+        background-size: 236px, 538px;
+        background-position: 464px 108px, 345px 52px;
     }
 }
 
@@ -47,8 +64,7 @@
 
 button.button-order-menu {
     margin: 60px 20px;
-    width: -webkit-fill-available;
-    width: fill-available;
+    width: 80%;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -56,7 +72,7 @@ button.button-order-menu {
     padding-bottom: 13px;
     color: $accent-primary-color;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        margin-top: 52px;
+        margin-top: 49px;
     }
     @media screen and (min-width: 1280px) {
         display: none;
@@ -72,43 +88,46 @@ button.button-order-menu {
 }
 
 .main-nav {
-    // display: none;
-    @media screen and (max-width: 768px) {
+    z-index: 5;
+    @media screen and (max-width: 767px) {
+        padding-left: 10px;
+        padding-right: 10px;
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 3;
         width: 100vw;
         height: 100vh;
         background-color: #E17992;
         transform: translateX(200%);
+        transform: scaleX(0);
+        transform-origin: center right;
         transition: transform $function-time;
     }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         position: absolute;
-        left: calc(50% - 60px);
+        right: 0;
         top: 0;
         width: 254px;
-        z-index: -1;
-        opacity: 0;
         height: auto;
         background-color: #E17992;
+        transform: scaleX(0);
+        transform-origin: center right;
         transition: transform $function-time, opacity $function-time;
     }
     @media screen and (min-width: 1280px) {
         display: flex;
         flex-direction: row-reverse;
         position: relative;
-        z-index: 2;
     }
 }
 
 .main-nav.is-open {
-    transform: translateX(0);
+    transform: scaleX(1);
+    @media screen and (max-width: 767px) {
+        overflow-y: scroll;
+    }
     @media screen and (min-width: 768px) and (max-width: 1279px) {
-        opacity: 1;
-        transform: translateX(160px);
-        z-index: 5;
+        transform: scaleX(1);
     }
 }
 
@@ -125,6 +144,10 @@ button.button-order-menu {
 }
 
 .nav__item {
+    @media screen and (max-width: 767px) {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
     @media screen and (max-width: 1279px) {
         border-top: 1px solid #E18298;
     }
@@ -171,7 +194,7 @@ button.button-order-menu {
 .icon-burger {
     stroke: $accent-primary-color;
     width: 20px;
-    height: 12px;
+    height: 20px;
     cursor: pointer;
     position: relative;
     z-index: 2;
@@ -192,7 +215,7 @@ button.button-order-header {
     display: none;
     @media screen and (min-width: 768px) {
         display: block;
-        padding: 10px 28px;
+        padding: 10px 37px;
         border-radius: 22px;
     }
     @media screen and (min-width: 1280px) {

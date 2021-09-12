@@ -1,36 +1,79 @@
-<header class="header">
-    <div class="container container--header">
-        <img class="logo-page" srcset="./images/hero-header/logo.png 1x,
+<div class="hero-header-wrapper">
+    <div class="container container--hero-header">
+        <header class="header container--header">
+            <div class="logo-wrapper">
+                <img class="logo-page" srcset="./images/hero-header/logo.png 1x,
              ./images/hero-header/logo-@2x.png 2x" src="./images/hero-header/logo.png" alt="логотип сайта">
 
-        <nav class="main-nav js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
+                <span class=" hero__title hero__logo--accent">icecream</span></div>
+
+            <nav class="main-nav js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
             <svg class="icon-close">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg></button>
-            <button class="button button--light button-order-menu" type="button">Buy now <svg class="btn__icon">
+                <button class="button button--light button-order-menu" type="button">Buy now <svg class="btn__icon">
                     <use href="./images/icons.svg#icon-left"></use>
                 </svg></button>
 
-            <ul class="nav">
-                <li class="nav__item"><a class="nav__link js-close-menu" href="#home">Home</a></li>
-                <li class="nav__item"><a class="nav__link js-close-menu" href="#advantages">About us</a></li>
-                <li class="nav__item"><a class="nav__link js-close-menu" href="#about">How it’s made?</a></li>
-                <li class="nav__item"><a class="nav__link js-close-menu" href="#products">Our products</a></li>
-                <li class="nav__item"><a class="nav__link js-close-menu" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="tablet-wrapper">
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <ul class="nav">
+                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#advantages">About us</a></li>
+                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#about">How it’s made?</a></li>
+                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#products">Our products</a></li>
+                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="tablet-wrapper">
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="icon-burger">
                 <use href="./images/icons.svg#icon-burger"></use>
             </svg></button>
-            <button class="button button--light button-order-header" type="button" data-modal-open-buy-now>Buy now <svg class="btn__icon">
+                <button class="button button--light button-order-header" type="button" data-modal-open-buy-now>Buy now <svg class="btn__icon">
                 <use href="./images/icons.svg#icon-left"></use>
             </svg></button></div>
+        </header>
+        <section class="hero container--hero" id="home">
+            <div class="hero__title-wrapper">
+                <h1 class="hero__title">ice cream <br> made with<br> <span class=" hero__title hero__title--accent">passion</span></h1>
+                <a class="hero__button hero__button--accent" href="#products">Products </a>
+                <a class="hero__button hero__button--light" href="#about">How it’s made? </a>
+            </div>
+
+
+            <div class="animate__animated animate__fadeInLeftBig hero__milk-wrapper">
+                <img class="hero__milk" srcset="
+                ./images/hero-header/hero-milk-w124.png 124w, 
+                ./images/hero-header/hero-milk-w124-@2x.png 248w, 
+                ./images/hero-header/hero-milk-w188.png 188w, 
+                ./images/hero-header/hero-milk-w188-@2x.png 376w" src="./images/hero-header/hero-milk-w124.png" alt="jug of milk" sizes="(min-width:768px) and (max-width:1279px) 124px, 
+                    (min-width:1280px) 188px ">
+                <p class="hero__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    <br>
+                    <button class="hero__read-more" type="button"><svg class="btn__icon">
+                    <use href="./images/icons.svg#icon-left"></use>
+                </svg></button>
+                </p>
+
+            </div>
+            <img class="animate__animated animate__fadeInRight hero__girl " srcset="
+                ./images/hero-header/hero-girl-w168.png 168w, 
+                ./images/hero-header/hero-girl-w168-@2x.png 336w, 
+                ./images/hero-header/hero-girl-w293.png 293w, 
+                ./images/hero-header/hero-girl-w293-@2x.png 586w" src="./images/hero-header/hero-girl-w168.png" alt="girl with ice-cream" sizes="(min-width:768px) and (max-width:1279px) 168px, 
+                    (min-width:1280px) 293px ">
+            <div class="calc-cards">
+                <div class="calc-card">
+                    <p class="calc-card__number">16</p> <span class="calc-card__text">cafes</span>
+                </div>
+                <div class="calc-card">
+                    <p class="calc-card__number">23</p> <span class="calc-card__text">food trucks</span>
+                </div>
+            </div>
+        </section>
     </div>
-</header>
+</div>
 
-
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous">
+</script>
 <script defer src="js/mobile-menu.js"></script>
