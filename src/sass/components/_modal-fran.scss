@@ -1,5 +1,5 @@
 /*модальное окно*/
-.modal__franchise {
+.modal-contacts-fran {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,7 +28,7 @@
     width: 500px;
   }
 }
-.backdrop.is-hidden .modal__franchise {
+.backdrop.is-hidden .modal-contacts-fran {
   transform: translate(-50%, -50%) scale(0.75);
 }
 .modal-franchise__button-close {
@@ -59,7 +59,7 @@
   stroke: currentColor;
 }
 
-.modal__title {
+.modal-contacts-fran__title {
   text-align: center;
   font-family: Titan One;
   font-weight: 400;
