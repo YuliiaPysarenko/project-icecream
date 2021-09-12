@@ -90,11 +90,13 @@
   letter-spacing: 0.04em;
   color: $accent-primary-color;
   margin-bottom: 18px;
+  text-transform: uppercase;
 
   /* Tablet */
   @media screen and (min-width: 768px) {
     font-size: 48px;
     margin-bottom: 22px;
+    text-transform: none;
   }
 
   /* Desktop */
