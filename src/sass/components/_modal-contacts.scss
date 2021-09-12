@@ -1,4 +1,6 @@
+
 .modal-contact {
+
   position: absolute;
   left: 50%;
   top: 50%;
@@ -28,7 +30,8 @@
     max-width: 480px;
   }
 }
-.modal-contacts__button-close {
+.modal-contacts__button-close,
+.modal-franchise__button-close {
   position: absolute;
   right: 3%;
   top: 3%;
@@ -56,14 +59,18 @@
   }
 }
 
+
 .modal-contacts__icon-close.modal-contacts__icon-close {
+
   display: block;
   width: 15px;
   height: 15px;
   stroke: currentColor;
 }
 
+
 .modal__title {
+
   text-align: center;
   font-family: Titan One;
   font-weight: 400;
@@ -81,7 +88,21 @@
   }
 }
 
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.text-box__title {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.text-box__description {
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
 }
