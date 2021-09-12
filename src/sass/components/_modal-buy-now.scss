@@ -26,16 +26,7 @@
     border-bottom-left-radius: 10px;
   
     background: #fff5f6;
-    background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.0),
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.0)
-    ), url(../images/modal/ice-cream500w.png);
-    background-position: bottom;
     
-    background-size: 87%;
-    background-repeat: no-repeat;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   
@@ -43,17 +34,6 @@
       transform: translate(-50%, -400%);
     }
     
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image:  linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.0),
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.0)
-    ),url('../images/modal/ice-cream1000w.png');
-}
 
     @media screen and (max-height: 500px) 
     {
