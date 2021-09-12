@@ -19,12 +19,7 @@
     top: 0;
     
     padding: 15px 30px;
-  
-    border-top-left-radius: 50px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 10px;
-  
+    border-radius: 20px;
     background: #fff5f6;
     
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,8 +28,7 @@
     .backdrop.is-hidden & {
       transform: translate(-50%, -400%);
     }
-    
-
+  
     @media screen and (max-height: 500px) 
     {
         margin-top: 170px;
@@ -49,7 +43,7 @@
     }
     @media screen and (min-width: 1280px) {
   
-        width: 500px;
+        width: 550px;
         max-width: none;
         background-size: 80%;
     }
@@ -68,21 +62,21 @@
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-  
+  border: none;
     display: flex;
     align-items: center;
-  
-    background: $accent-light-color;
     cursor: pointer;
+    background-color: #fff5f6;
   }
   .buy-now__icon {
-fill:$primary-text-color ;
-    transition: fill $function-time;
+    stroke: $accent-primary-color;
+    width: 16px;
+    height: 16px;
+    transition: stroke $function-time;
   
     .buy-now__close:hover &,
     .buy-now__close:focus & {
-      fill: $accent-primary-color;
+     stroke: $accent-secondary-color;
     }
   }
   
@@ -109,36 +103,20 @@ fill:$primary-text-color ;
     flex-direction: column;
   }
   .buy-now__text {
-    position: relative;
-  }
-  .buy-now__label{
-    position: absolute;
-    left: 5px;
-    top: -15px;
-
-padding: 0 4px;
-margin-bottom: -2px;
-
-border-top-left-radius: 6px ;
-    border-top-right-radius:  6px;
-   background-color:$accent-light-color ;
-
     font-size: 14px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
     @media screen and (min-width: 768px)
     {
         font-size: 16px;
-        top: -17px;
+       
     }
   }
   
   .buy-now__blok {
     position: relative;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     @media screen and (min-width: 768px)
     {
-      margin-bottom: 35px;
+      margin-bottom: 15px;
     }
   }
  
@@ -175,16 +153,16 @@ border-top-left-radius: 6px ;
     }
   }
   .product{
-    position: relative;
     display: flex;
     justify-content: space-around;
     padding: 4px 0;
-    margin-bottom: 25px;
-    border: 2px solid $accent-light-color;
-    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 2px solid $accent-primary-color;
+    border-radius: 8px;
+
     @media screen and (min-width: 768px)
     {
-      margin-bottom: 35px;
+      margin-bottom: 12px;
     }
 
   }
@@ -198,21 +176,42 @@ border-top-left-radius: 6px ;
     background-size: contain;
     border: 1px solid $accent-primary-color;
     border-radius: 3px;
+    &:hover,
+    &:focus{
+      border: 3px solid $accent-primary-color;
+    }
 
-
-    &:nth-child(2){
+    &:nth-child(1){
       background-color: $bg-pink-color;
       background-image: url(../images/modal/product-1.png); 
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal/product-1.png);
+  }
+    }
+
+    &:nth-child(2){
+      background-color: $bg-brown-color;
+  background-image: url(../images/modal/product-2.png);
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../images/modal/product-1.png);
+}
     }
 
     &:nth-child(3){
-      background-color: $bg-brown-color;
-  background-image: url(../images/modal/product-2.png);
-    }
-
-    &:nth-child(4){
       background-color: $bg-green-color;
       background-image: url(../images/modal/product-3.png);
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/modal/product-1.png);
+  }
     }
   }
 
@@ -227,6 +226,7 @@ position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
+stroke: none;
 fill: none;
 .check:checked + & {
   border: none;
@@ -235,7 +235,7 @@ fill: none;
 }
  .product__point:hover &,
  .product__point:focus &{
-  border:8px solid $accent-primary-color ;
+  stroke: $accent-primary-color;
  }
 }
   .buy-now__comment {
@@ -298,9 +298,13 @@ fill: none;
     }
   }
 .buy-now__text-check{
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.17;
       letter-spacing: 0.01em;
+      @media screen and (min-width: 768px)
+      {
+        font-size: 16px;
+      }
 }
 
   .check {
@@ -313,18 +317,19 @@ fill: none;
   .buy-now__link {
     text-decoration: underline;
     color: $accent-primary-color;
-    font-size: 12px;
-    line-height: 1.16;
+    font-size: inherit;
+    line-height: inherit;
     letter-spacing: 0.025em;
     @media screen and (min-width: 1200px) 
     {
-        font-size: 14px;
+        font-size: 16px;
     }
   }
   
   .buy-now__checked {
     margin-right: 8px;
-  
+  width: 20px;
+  height: 20px;
     border: 2px solid $primary-text-color;
     border-radius: 2px;
   
@@ -346,7 +351,7 @@ fill: none;
   border-radius: 22px;
   border: none;
   text-align: center;
-  padding: 6px 20px;
+  padding: 10px 20px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3em;
