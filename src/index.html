@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IceCream</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
+    <!-- for header-hero-start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- for header-hero-end -->
     <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-  </head>
-  <body>
+</head>
 
-     <include src="./partials/header.html"></include>
-     <include src="./partials/hero.html"></include>
-     <include src="./partials/products.html"></include>
-     <include src="./partials/about.html"></include>
-     <include src="./partials/advantages.html"></include>
-     <include src="./partials/gallery.html"></include>
-     <include src="./partials/customer-reviews.html"></include>
-     <include src="./partials/contacts.html"></include>
-     <include src="./partials/footer.html"></include>
-     <include src="./partials/modal-buy-now.html"></include>
+<body data-spy="scroll" data-target="#main-nav" data-offset="60">
 
-     <include src="./partials/modal-about.html"></include>
+    <include src="./partials/header.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-buy-now.html"></include>
+
+    <include src="./partials/modal-about.html"></include>
 
     <include src="./partials/modal-contacts.html"></include>
     <include src="./partials/modal-contacts-loc.html"></include>
     <include src="./partials/modal-contacts-fran.html"></include>
-    
-    
 
-     <script src="./index.js"></script>   
-     <script src="./js/modal-buy-now.js"></script>
-     <script src="./js/modal-about.js"></script>
+
+
+    <script src="./index.js"></script>
+    <script src="./js/modal-buy-now.js"></script>
+    <script src="./js/modal-about.js"></script>
     <script src="./js/modal-contacts.js"></script>
     <script src="./js/modal-franchise.js"></script>
 
-      <script src="./js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6J6sehOtLZtk0KJYgnOMui3NcrbzTCs&callback=initMap&libraries=&v=weekly" async></script>
-  </body>
+    <script src="./js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ6J6sehOtLZtk0KJYgnOMui3NcrbzTCs&callback=initMap&libraries=&v=weekly" async></script>
+    <!-- for header-hero-start -->
+    <script src="./js/scroll.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous">
+    </script>
+    <script defer src="js/mobile-menu.js"></script>
+    <!-- for header-hero-end -->
+</body>
+
 </html>
