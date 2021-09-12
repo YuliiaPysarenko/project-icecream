@@ -65,7 +65,8 @@
   padding: 50px 43px 62px 43px;
 }
 
-.contacts__place {
+.contacts__place,
+.text-box__title {
   color: $accent-light-color;
   background-color: $bg-brown-color;
   border-radius: 4px;
@@ -78,7 +79,8 @@
     margin-bottom: 30px;
   }
 }
-.contacts__place--green {
+.contacts__place--green,
+.text-box__title--green {
   background-color: $bg-green-color;
   border-radius: 4px;
   width: 130px;
@@ -90,9 +92,10 @@
     width: 138px;
   }
 }
-.contacts__sity__loc {
+.contacts__sity__loc,
+.text-box__name {
   color: $secondary-text-color;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   @media screen and (min-width: 1280px) {
     font-size: 16px;
   }
