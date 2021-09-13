@@ -80,10 +80,13 @@
     border-radius: 50%;
     border: none;
     margin-top: 30px;
+    cursor: pointer;
+    transition: transform 250ms; 
 
     &:hover {
         background-color: $bg-gray-color;
         transition: $function-time;
+        transform: rotate(-90deg);
     }
 }
 
