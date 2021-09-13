@@ -108,14 +108,14 @@
 .footer-box::after {
   content: '';
   position: absolute;
-  bottom: 22%;
+  bottom: 18%;
   left: 0;
   width: 100%;
 
   border-bottom: 1px solid #e1e1e1;
 
   @media screen and(min-width:768px) and(max-width:1279px) {
-    bottom: 20%;
+    bottom: 15%;
   }
   @media screen and(min-width:1280px) {
     bottom: 13%;
@@ -129,6 +129,7 @@
 }
 .footer__link {
   border-radius: 50%;
+  width: 32px;
   background-color: #fea5bb;
   display: flex;
   align-items: center;
@@ -148,25 +149,24 @@
   }
 }
 .section--padding {
+  padding-top: 60px;
   padding-bottom: 25px;
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) and(max-width:1279px) {
     padding-bottom: 18px;
+  }
+  @media screen and(min-width:1280px) {
+    padding-bottom: 10px;
   }
 }
 
 .copyright {
   text-align: center;
   margin-top: 65px;
-  padding-bottom: 25px;
 
   @media screen and(min-width:768px) {
     margin-top: 120px;
     display: flex;
     justify-content: center;
-    padding-bottom: 18px;
-  }
-  @media screen and(min-width:1280px) {
-    padding-bottom: 10px;
   }
 }
 .copyright__text {
