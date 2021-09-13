@@ -1,6 +1,7 @@
-<section class="section section__color--change">
-    <div class="container container--gallery">
+<section class="section section--gallery">
+    <div class="container">
        <!-- В этот список добавляй элементы галереи -->
+       <div class="container__box">
  <ul class="gallery js-gallery">
  <li class="gallery__item">
   <a
@@ -11,7 +12,7 @@
       class="gallery__image"
       src="./images/gallery/brooke-lark-w300.jpg"
       data-source="./images/gallery/brooke-lark-origin.jpg"
-      alt="Tulips"
+      alt="lots of ice cream"
     />
   </a>
 </li>
@@ -24,7 +25,7 @@
       class="gallery__image"
       src="./images/gallery/christian-bowen-w300.jpg"
       data-source="./images/gallery/christian-bowen-origin.jpg"
-      alt="Tulips"
+      alt="dog eats ice cream"
     />
   </a>
 </li>
@@ -37,7 +38,7 @@
       class="gallery__image"
       src="./images/gallery/food-photographerstylist-w200.jpg"
       data-source="./images/gallery/food-photographerstylist-origin.jpg"
-      alt="Tulips"
+      alt="dessert decoration"
     />
   </a>
   </li>
@@ -50,7 +51,7 @@
         class="gallery__image"
         src= ".\images\gallery\dana-devolk-w170.jpg"
         data-source= ".\images\gallery\dana-devolk-w1000.jpg"
-        alt="Tulips"
+        alt="green ice cream in a bowl"
       />
     </a>
 	</li>
@@ -63,7 +64,7 @@
         class="gallery__image"
         src= ".\images\gallery\home-w175.jpg"
         data-source= ".\images\gallery\home-w283.jpg"
-        alt="Tulips"
+        alt="pink ice cream in hand"
       />
     </a>
   </li>
@@ -76,7 +77,7 @@
           class="gallery__image"
           src= ".\images\gallery\ian-dooley-w200.jpg"
           data-source= ".\images\gallery\ian-dooley-origin.jpg"
-          alt="Tulips"
+          alt="pink ice cream in hand"
         />
       </a>
   </li>
@@ -89,7 +90,7 @@
             class="gallery__image"
             src= ".\images\gallery\ledy-w200.jpg"
             data-source= ".\images\gallery\ledy-origin.jpg"
-            alt="Tulips"
+            alt="girl with ice cream"
           />
         </a>
     </li>
@@ -102,7 +103,7 @@
               class="gallery__image"
               src= ".\images\gallery\peakpx-w200.jpg"
               data-source= ".\images\gallery\peakpx-origin.jpg"
-              alt="Tulips"
+              alt="raspberry ice cream on a stick"
             />
           </a>
     </li>
@@ -115,7 +116,7 @@
                 class="gallery__image"
                 src= ".\images\gallery\pratiksha-mohanty-w200.jpg"
                 data-source= ".\images\gallery\pratiksha-mohanty-origin.jpg"
-                alt="Tulips"
+                alt="milk shake"
               />
             </a>
       </li>
@@ -128,11 +129,12 @@
                   class="gallery__image"
                   src= ".\images\gallery\Rim-s-detmi-w200.jpg"
                   data-source= ".\images\gallery\Rim-s-detmi-origin.jpg"
-                  alt="Tulips"
+                  alt="red ice cream in hand"
                 />
               </a>
 </li>
 </ul>
+</div>
 
  <!--
    Модальное окно для полноразмерного изображения
@@ -144,12 +146,16 @@
    <div class="lightbox__content ">
      <img class="lightbox__image" src="" alt="" />
    </div>
-
+   
    <button
      type="button"
      class="lightbox__button"
      data-action="close-lightbox"
-   ></button>
+   >
+   <svg class="lightbox__icon" height="18px" width="18px">
+        <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
  </div>
     </div>
   </section>

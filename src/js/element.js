@@ -35,13 +35,15 @@ refs.gallery.addEventListener("click", onGalleryClick);
 refs.btn.addEventListener("click", onClickHandlerClose);
 refs.modal.addEventListener("click", closeLightbox);
 
+
 function onGalleryClick(e) {
-  e.preventDefault();
+   e.preventDefault();
   if (e.target.nodeName !== 'IMG') {
     return;
   }
   if (e.target.nodeName === "IMG") {
     refs.lightbox.classList.add("is-open");
+    document.body.classList.toggle("modal-open");
     refs.lightbox__image.src = e.target.getAttribute("data-source");
     refs.lightbox__image.alt = e.target.alt;
   }
@@ -49,14 +51,16 @@ function onGalleryClick(e) {
 }
 
 function onClickHandlerClose(e) {
-  e.preventDefault(); 
+    e.preventDefault(); 
   refs.lightbox.classList.remove("is-open");
+  document.body.classList.toggle("modal-open");
   refs.lightbox__image.src = '';
   refs.lightbox__image.alt = '';
   window.removeEventListener("keyup", clickKey);
 }
 
 function closeLightbox(event) {
+  
   if (event.target === event.currentTarget) {
     onClickHandlerClose();
   }
