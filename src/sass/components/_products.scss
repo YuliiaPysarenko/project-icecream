@@ -80,6 +80,11 @@
     border-radius: 50%;
     border: none;
     margin-top: 30px;
+
+    &:hover {
+        background-color: $bg-gray-color;
+        transition: $function-time;
+    }
 }
 
 .products-container__icon {
