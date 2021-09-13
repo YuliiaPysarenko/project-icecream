@@ -131,7 +131,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .products-container__list::before {
+       .products-container__list::before {
         content: url(/images/product/product-desktop.png); 
         bottom: 75%;
       }
@@ -151,12 +151,12 @@
            font-size: 16px;
            line-height: 1.79;
     }
-    .products-container__list {
+      .products-container__list {
         padding-left: 40px;
         padding-right: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
-    .products-container__title {
+      .products-container__title {
         margin-bottom: 260px;
     }
 }
