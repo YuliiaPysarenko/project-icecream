@@ -157,12 +157,12 @@
     padding: 12px 35px;
   }
 }
-.icon--left {
+.icon__left {
   fill: transparent;
   margin-left: 15px;
   stroke: $accent-primary-color;
 }
-.icon--left--lite {
+.icon__left--lite {
   fill: transparent;
   margin-left: 15px;
   stroke: $accent-light-color;
@@ -173,10 +173,19 @@
   // padding-left: 40px;
   // padding-right: 40px;
   transition: background-color $function-time;
+}
 
+.button--light {
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    cursor: pointer;
+  }
+}
+.button--accent {
+  &:hover,
+  &:focus {
+    background-color: #d35f7c;
     cursor: pointer;
   }
 }
