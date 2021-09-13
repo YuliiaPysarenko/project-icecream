@@ -1,37 +1,36 @@
 <div class="hero-header-wrapper">
     <div class="container container--hero-header">
-        <header class="header container--header">
-            <div class="logo-wrapper">
-                <img class="logo-page" srcset="./images/hero-header/logo.png 1x,
+        <header class="header">
+            <div class="logo-page">
+                <img class="logo-page__img" srcset="./images/hero-header/logo.png 1x,
              ./images/hero-header/logo-@2x.png 2x" src="./images/hero-header/logo.png" alt="логотип сайта">
 
-                <span class=" hero__title hero__logo--accent">icecream</span></div>
-
-            <nav class="main-nav js-menu-container" id="mobile-menu">
+                <span class=" hero__title hero__title--logo">icecream</span>
+            </div>
+            <div class="menu-wrapper js-menu-container">
                 <button class="menu-toggle js-close-menu">
-            <svg class="icon-close">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg></button>
-                <button class="button button--light button-order-menu" type="button">Buy now <svg class="btn__icon">
-                    <use href="./images/icons.svg#icon-left"></use>
-                </svg></button>
-
-                <ul class="nav">
-                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#home">Home</a></li>
-                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#advantages">About us</a></li>
-                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#about">How it’s made?</a></li>
-                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#products">Our products</a></li>
-                    <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="tablet-wrapper">
+                    <svg class="icon-close"><use href="./images/icons.svg#icon-close"></use></svg>
+                </button>
+                <button class="button button--light button-order-menu" type="button" data-modal-open-buy-now>Buy now 
+                    <svg class="btn__icon"> <use href="./images/icons.svg#icon-left"></use> </svg>
+                </button>
+                <nav class="main-nav" id="mobile-menu">
+                    <ul class="nav">
+                        <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#home">Home</a></li>
+                        <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#advantages">About us</a></li>
+                        <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#about">How it’s made?</a></li>
+                        <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#products">Our products</a></li>
+                        <li class="nav__item"><a class="nav__link js-close-menu scroll" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btn-menu-wrapper">
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="icon-burger">
-                <use href="./images/icons.svg#icon-burger"></use>
-            </svg></button>
-                <button class="button button--light button-order-header" type="button" data-modal-open-buy-now>Buy now <svg class="btn__icon">
-                <use href="./images/icons.svg#icon-left"></use>
-            </svg></button></div>
+                <svg class="icon-burger"><use href="./images/icons.svg#icon-burger"></use></svg>
+            </button>
+                <button class="button button--light button-order-header " type="button" data-modal-open-buy-now>Buy now 
+                <svg class="btn__icon"><use href="./images/icons.svg#icon-left"></use> </svg>
+            </button></div>
         </header>
         <section class="hero container--hero" id="home">
             <div class="hero__title-wrapper">
@@ -52,8 +51,9 @@
                     <br>
 
 
-                    <button type=button class="hero__read-more"><svg class="btn__icon" >
-                    <use href="./images/icons.svg#icon-right"></use></svg></button>
+                    <button type=button class="hero__read-more"><svg class="btn__icon">
+              <use href="./images/icons.svg#icon-right"></use>
+            </svg></button>
                 </p>
 
             </div>
