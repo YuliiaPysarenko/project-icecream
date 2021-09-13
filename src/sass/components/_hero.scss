@@ -156,14 +156,14 @@
     width: 8px;
     height: 8px;
     margin-left: 0;
-    fill: transparent;
-    stroke: $accent-primary-color;
+    fill: $accent-primary-color;
+    stroke: transparent;
     transition: stroke $function-time;
 }
 
 .hero__read-more:hover .btn__icon,
 .hero__read-more:focus .btn__icon {
-    stroke: $accent-light-color;
+    fill: $accent-light-color;
 }
 
 .hero__girl {
