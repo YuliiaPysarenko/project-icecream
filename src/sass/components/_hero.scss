@@ -139,6 +139,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     transition: background-color $function-time;
     &:hover,
     &:focus {
@@ -158,51 +159,13 @@
     fill: transparent;
     stroke: $accent-primary-color;
     transition: stroke $function-time;
-    &:hover,
-    &:focus {
-        stroke: $accent-light-color;
-    }
 }
 
-// .hero__decoration-bg {
-//     position: absolute;
-//     top: 4%;
-//     right: -25%;
-//     width: 346px;
-//     height: 344px;
-//     // background-color: $accent-secondary-color;
-//     background-image: url('../images/hero-header/decorative-bg-header.png');
-//     border-radius: 50%;
-//     background-size: 346px;
-//     z-index: 1;
-//     @media screen and (min-width: 768px) {
-//         right: 103px;
-//         top: -68px;
-//         width: 324px;
-//         height: 322px;
-//         background-size: 324px;
-//     }
-//     @media screen and (min-width: 1280px) {
-//         left: 391px;
-//         top: -125px;
-//         background-size: 538px;
-//         width: 538px;
-//         height: 538px;
-//     }
-// }
-// .hero__ice-cream {
-//     position: absolute;
-//     top: -2px;
-//     right: 32%;
-//     @media screen and (min-width: 768px) {
-//         top: 30px;
-//         left: 71px;
-//     }
-//     @media screen and (min-width: 1280px) {
-//         top: 56px;
-//         left: 119px;
-//     }
-// }
+.hero__read-more:hover .btn__icon,
+.hero__read-more:focus .btn__icon {
+    stroke: $accent-light-color;
+}
+
 .hero__girl {
     display: none;
     @media screen and (min-width: 768px) {
