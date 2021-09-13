@@ -43,7 +43,7 @@ function toggleModal() {
 
 
 function onGalleryClick(e) {
-  toggleModal();
+  
   e.preventDefault();
   if (e.target.nodeName !== 'IMG') {
     return;
@@ -57,7 +57,7 @@ function onGalleryClick(e) {
 }
 
 function onClickHandlerClose(e) {
-  toggleModal();
+  
   e.preventDefault(); 
   refs.lightbox.classList.remove("is-open");
   refs.lightbox__image.src = '';
@@ -66,6 +66,7 @@ function onClickHandlerClose(e) {
 }
 
 function closeLightbox(event) {
+  
   if (event.target === event.currentTarget) {
     onClickHandlerClose();
   }
