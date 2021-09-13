@@ -35,7 +35,15 @@ refs.gallery.addEventListener("click", onGalleryClick);
 refs.btn.addEventListener("click", onClickHandlerClose);
 refs.modal.addEventListener("click", closeLightbox);
 
+
+function toggleModal() {
+  document.body.classList.toggle("modal-open");
+  refs.modal.classList.toggle('is-hidden');
+}
+
+
 function onGalleryClick(e) {
+  toggleModal();
   e.preventDefault();
   if (e.target.nodeName !== 'IMG') {
     return;
@@ -49,6 +57,7 @@ function onGalleryClick(e) {
 }
 
 function onClickHandlerClose(e) {
+  toggleModal();
   e.preventDefault(); 
   refs.lightbox.classList.remove("is-open");
   refs.lightbox__image.src = '';
