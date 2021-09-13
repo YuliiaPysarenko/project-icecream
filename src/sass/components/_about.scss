@@ -58,7 +58,7 @@
     }
 
     .about-modal & {
-        height: 90vh;
+        max-height: 90vh;
         padding-bottom: 30px;
     }
 }
@@ -68,6 +68,7 @@
 
     @media (max-width: 767px) {
         margin: 0 auto;
+        max-height: 120px;
     }
 
     @media (min-width: 768px) {
@@ -86,15 +87,17 @@
 
     .about-modal & {
         overflow: auto;
-        height: calc(100% - 300px);
+        height: calc(100% - 120px);
+        padding: 0;
     }
 
     @media (min-width: 768px) {
         width: 100%;
-        padding: 50px 10px 0 0;
+        padding: 50px 0 0;
 
         .about-modal & {
-            height: 80vh;
+            height: 77vh;
+            padding: 0 20px 0;
         }
     }
 
