@@ -73,6 +73,8 @@ button.button-order-menu {
     color: $accent-primary-color;
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         margin-top: 49px;
+        margin-left: auto;
+        margin-right: auto;
     }
     @media screen and (min-width: 1280px) {
         display: none;
