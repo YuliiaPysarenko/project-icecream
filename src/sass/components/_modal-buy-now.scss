@@ -177,7 +177,9 @@
     align-items: flex-end;
     width: 100px;
     height: 100px;
-    background-size: contain;
+    background-size: 79%;
+    background-repeat: no-repeat;
+    background-position: top;
     border: 1px solid $accent-primary-color;
     border-radius: 3px;
     &:hover,
@@ -187,34 +189,34 @@
 
     &:nth-child(1){
       background-color: $bg-pink-color;
-      background-image: url(../images/modal/product-1.png); 
+      background-image: url(../images/product/product-tablet.png); 
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/modal/product-1.png);
+      background-image: url(../images/product/product-tablet@2x.png);
   }
     }
 
     &:nth-child(2){
       background-color: $bg-brown-color;
-  background-image: url(../images/modal/product-2.png);
+  background-image: url(../images/product/product-tablet-2.png);
   @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  background-image: url(../images/modal/product-1.png);
+  background-image: url(../images/product/product-tablet-2@2x.png);
 }
     }
 
     &:nth-child(3){
       background-color: $bg-green-color;
-      background-image: url(../images/modal/product-3.png);
+      background-image: url(../images/product/product-tablet-1.png);
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/modal/product-1.png);
+      background-image: url(../images/product/product-tablet-1@2x.png);
   }
     }
   }
