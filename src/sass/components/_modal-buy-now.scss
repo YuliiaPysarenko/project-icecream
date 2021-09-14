@@ -283,7 +283,7 @@ fill: none;
     align-items: center;
     margin-bottom: 9px;
   
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.16;
     letter-spacing: 0.025em;
     fill: $accent-light-color;
@@ -292,24 +292,13 @@ fill: none;
 
       border-radius:  6px;
       @media screen and (min-width: 768px)
-      {
+      {font-size: 16px;
         margin-bottom: 15px;
       }
      background-color:$accent-light-color ;
-    @media screen and (min-width: 1280px) 
-    {
-        font-size: 14px;
-    }
+    
   }
-.buy-now__text-check{
-      font-size: 14px;
-      line-height: 1.17;
-      letter-spacing: 0.01em;
-      @media screen and (min-width: 768px)
-      {
-        font-size: 16px;
-      }
-}
+
 
   .check {
     position: absolute;
