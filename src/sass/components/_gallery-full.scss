@@ -4,8 +4,8 @@
 }
 .container__box{
   position: relative;
-  width:calc(100vw - 12px  - 40px) ;
-    height: calc((100vw - 12px  - 40px) / 7 * 3 + 4px);
+  width:calc(100vw - 40px) ;
+    height: calc((100vw - 40px) / 7 * 3 + 4px);
     @media (min-width: 480px) {
     width: 440px;
       height: calc((440px - 12px) / 7 * 3 + 4px);
