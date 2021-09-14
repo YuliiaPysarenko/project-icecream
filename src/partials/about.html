@@ -4,16 +4,12 @@
         <h2 class="section__title section__title--mb">How it’s made?</h2>
         
         <div class="about">
-            <img class="about__image"
-                src="images/about/about_cow_280.png"  
-                srcset="images/about/about_cow_1032.png 1030w,
-                        images/about/about_cow_680.png  680w,
-                        images/about/about_cow_560.png  560w,
-                        images/about/about_cow_516.png  516w,
-                        images/about/about_cow_340.png  340w,
-                        images/about/about_cow_280.png  280w" 
-                alt="Cow and milk" 
-                sizes="(min-width: 1280px) 516px, (min-width: 768px) 340px, 280px" />
+            <picture class="about__image">
+                <source media="(min-width: 1280px)" srcset="images/about/about_cow_desktop@1x.png 1x, images/about/about_cow_desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="images/about/about_cow_tab@1x.png 1x, images/about/about_cow_tab@2x.png 2x">
+                <source media="(max-width: 767px)" srcset="images/about/about_cow_mob@1x.png 1x, images/about/about_cow_mob@2x.png 2x">
+                <img src="images/about/about_cow_mob@1x.png" alt="Cow and milk">
+            </picture>
             <div class="about__box">
                 <p class="about__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.</p>
                 <p class="about__description">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.<br><br>

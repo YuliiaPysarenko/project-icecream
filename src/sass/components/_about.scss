@@ -1,6 +1,6 @@
 .section--background {
     background-color: $bg-lightpink-color;
-    background-image: url('/images/about/about_milk_320.png');
+    background-image: url('/images/about/about_milk_mob@1x.png');
     background-repeat: no-repeat;
     background-position: 50% 90%;
     background-size: contain;
@@ -9,7 +9,7 @@
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('/images/about/about_milk_640.png');
+        background-image: url('/images/about/about_milk_mob@2x.png');
     }
 
     @media (min-width: 768px),
@@ -27,13 +27,13 @@
     @media (min-width: 1280px),
             (min-resolution: 192dpi)  and (min-width: 1280px),
             (min-resolution: 2dppx) and (min-width: 1280px) {
-        background-image: url('/images/about/about_milk_1282.png');
+        background-image: url('/images/about/about_milk_desktop@1x.png');
         background-position: 50% 120%;
 
         @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                background-image: url('/images/about/about_milk_2564.png');
+                background-image: url('/images/about/about_milk_desktop@2x.png');
         }
     }
 }
@@ -43,7 +43,7 @@
 }
 
 .section__title--mb {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     
     @media (min-width: 768px) {
         margin-bottom: 50px;
@@ -58,21 +58,50 @@
     }
 
     .about-modal & {
-        max-height: 90vh;
+        height: 85vh;
         padding-bottom: 30px;
+        overflow: auto;
+    
+        @media (min-width: 768px) {
+            justify-content: space-around;
+        }
     }
 }
 
-.about__image {
+.about__image > img {
     display: block;
 
     @media (max-width: 767px) {
-        margin: 0 auto;
-        max-height: 120px;
+        margin: 0 auto 40px;
+
+        .about-modal & {
+            margin: 0 auto;
+            width: auto;
+            max-height: 120px;
+        }
+    }
+}
+
+.about__image > source {
+    display: block;
+
+    @media (max-width: 767px) {
+        width: 280px;
+
+        // .about-modal & {
+        //     width: auto;
+        //     max-height: 120px;
+        // }
     }
 
     @media (min-width: 768px) {
+        width: 340px;
         margin-right: 20px;
+
+        .about-modal & {
+            width: auto;
+        }
+
     }
 
     @media (min-width: 1280px) {

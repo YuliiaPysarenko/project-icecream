@@ -20,7 +20,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    padding: 40px;
+    padding: 40px 20px;
 
     background-color: $bg-lightpink-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -31,17 +31,18 @@
     width: 90vw;
     height: 90vh;
     max-height: 700px;
-    resize: vertical;
+    // resize: vertical;
+    overflow: hidden;
 
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
 
-    @media (min-width: 768px) {
-        max-height: 700px;
+    @media (min-width: 500px) {
+        max-height: 600px;
     }
 
-    @media (min-width: 950px) {
-        max-height: 600px;
+    @media (min-width: 768px) {
+        padding: 40px;
     }
 
     @media (min-width: 1000px) {
@@ -50,7 +51,7 @@
 
     @media (min-width: 1280px) {
         max-width: 1200px;
-        max-height: 700px;
+        max-height: 650px;
     }
 
     .backdrop.is-hidden & {
