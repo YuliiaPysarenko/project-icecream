@@ -40,17 +40,38 @@
   }
   &:nth-child(1)::before {
     width: 33px;
-    background-image: url(../images/advantages/icon-1.png);
+    background-image: url(../images/advantages/advantages_icon-1@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/advantages_icon-1@2x.png);
+    }
   }
 
   &:nth-child(2)::before {
     width: 50px;
-    background-image: url(../images/advantages/icon-2.png);
+    background-image: url(../images/advantages/advantages_icon-2@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/advantages_icon-2@2x.png);
+    }
   }
 
   &:nth-child(3)::before {
     width: 44px;
-    background-image: url(../images/advantages/icon-3.png);
+    background-image: url(../images/advantages/advantages_icon-3@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/advantages/advantages_icon-3@2x.png);
+    }
   }
 
   /* Tablet */
