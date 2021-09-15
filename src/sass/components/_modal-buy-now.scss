@@ -189,34 +189,34 @@
 
     &:nth-child(1){
       background-color: $bg-pink-color;
-      background-image: url(../images/product/product-tablet.png); 
+      background-image: url(../images/product/ice-coffee-tablet-1.png); 
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/product/product-tablet@2x.png);
+      background-image: url(../images/product/ice-coffee-tablet-1@2x.png);
   }
     }
 
     &:nth-child(2){
       background-color: $bg-brown-color;
-  background-image: url(../images/product/product-tablet-2.png);
+  background-image: url(../images/product/ice-cream-tablet.png);
   @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  background-image: url(../images/product/product-tablet-2@2x.png);
+  background-image: url(../images/product/ice-cream-tablet@2x.png);
 }
     }
 
     &:nth-child(3){
       background-color: $bg-green-color;
-      background-image: url(../images/product/product-tablet-1.png);
+      background-image: url(../images/product/milkshakes-tablet-2.png);
       @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/product/product-tablet-1@2x.png);
+      background-image: url(../images/product/milkshakes-tablet-2@2x.png);
   }
     }
   }
