@@ -25,7 +25,7 @@
 
     &::before {
     position: absolute;    
-    content: url(/images/product/product-mob.png); 
+    content: url(/images/product/ice-cream-mob.png); 
     bottom: 71%;
     display: block;
     left: 0;
@@ -35,19 +35,19 @@
 
 .products-container__list:nth-last-child(0n+3) 
 + .products-container__list::before {   
-    content: url(/images/product/product-mob-1.png); 
+    content: url(/images/product/ice-coffee-mob-1.png); 
 }
 
 .products-container__list:nth-last-child(0n+2) 
 + .products-container__list::before {  
-    content: url(/images/product/product-mob-2.png); 
+    content: url(/images/product/milkshakes-mob-2.png); 
 }
 
 .products-container__list-item-title { 
     position: relative;
 
     &::after {  
-    content: url(/images/product/group-4.png); 
+    content: url(/images/product/dots.png); 
     display: block;
     position: absolute;
     bottom: -40px;
@@ -94,6 +94,8 @@
     fill: $accent-primary-color;
 }
 
+/* Tablet */
+
 @media screen and (max-width: 767px) { 
     .products-container {
        width: 280px;
@@ -107,44 +109,46 @@
     .products-container__card {
         display: flex;    
     }
-    .products-container__list {
+     .products-container__list {
         flex-basis: calc(100% / 3);
         margin-bottom: 0;
         padding-left: 11px;
         padding-right: 11px;      
     }
-    .products-container__list:not(:last-child) {
+     .products-container__list:not(:last-child) {
         margin-right: 20px;   
     }
-    .products-container__list-item-text {
+     .products-container__list-item-text {
         line-height: 1.76;
     }
-    .products-container__list::before {
-        content: url(/images/product/product-tablet.png); 
+     .products-container__list::before {
+        content: url(/images/product/ice-cream-tablet.png); 
         bottom: 75%;
     }
-    .products-container__list:nth-last-child(0n+3) 
-   + .products-container__list::before {   
-    content: url(/images/product/product-tablet-1.png); 
+      .products-container__list:nth-last-child(0n+3) 
+    + .products-container__list::before {   
+         content: url(/images/product/ice-coffee-tablet-1.png); 
 }
-   .products-container__list:nth-last-child(0n+2) 
-   + .products-container__list::before {  
-    content: url(/images/product/product-tablet-2.png); 
+      .products-container__list:nth-last-child(0n+2) 
+     + .products-container__list::before {  
+         content: url(/images/product/milkshakes-tablet-2.png); 
     }
 }
 
+/* Desktop */
+
 @media screen and (min-width: 1280px) {
        .products-container__list::before {
-        content: url(/images/product/product-desktop.png); 
+        content: url(/images/product/ice-cream-desktop.png); 
         bottom: 75%;
       }
       .products-container__list:nth-last-child(0n+3) 
      + .products-container__list::before {   
-          content: url(/images/product/product-desktop-1.png); 
+          content: url(/images/product/ice-coffee-desktop-1.png); 
 }
       .products-container__list:nth-last-child(0n+2) 
      + .products-container__list::before {  
-          content: url(/images/product/product-desktop-2.png); 
+          content: url(/images/product/milkshakes-desktop-2.png); 
     }
       .products-container__list-item-title {
           font-size: 30px;
@@ -154,12 +158,60 @@
            font-size: 16px;
            line-height: 1.79;
     }
-      .products-container__list {
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 50px;
+       .products-container__list {
+           padding-left: 40px;
+           padding-right: 40px;
+           padding-bottom: 50px;
     }
-      .products-container__title {
-        margin-bottom: 260px;
+        .products-container__title {
+            margin-bottom: 260px;
     }
 }
+.products-container__list-description{
+    position: relative;
+    overflow: hidden;
+}
+
+.products-container__list-description-card {
+    position: absolute;
+    display: flex;
+    bottom: 17%;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(0); 
+    padding-top: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.products-container__list-description:hover 
+.products-container__list-description-card {
+    transform: translateX(100%);
+    transition: $function-time;
+}
+.products-container__list-description:hover
+.products-container__list-item-text {
+    visibility: hidden;
+}
+
+.products-container__list-description:hover
+.products-container__list-item-title {
+    visibility: hidden;
+}
+
+.products-container__list-description-text {
+    color: $accent-primary-color;
+    font-family: DM Sans;
+    @include font (16px, 700, 1.79, 0.04em);
+    text-align: center;
+    width: 200px;
+}
+
+@media screen and (max-width: 767px) { 
+    .products-container__list-description-text {
+        @include font (14px, 700, 1.52, 0.04em); 
+    }
+} 
