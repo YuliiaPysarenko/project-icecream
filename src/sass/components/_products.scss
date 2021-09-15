@@ -83,7 +83,8 @@
     cursor: pointer;
     transition: transform 250ms; 
 
-    &:hover {
+    .products-container__list-description:focus,
+    .products-container__list-description:hover & {
         background-color: $bg-gray-color;
         transition: $function-time;
         transform: rotate(-90deg);
@@ -170,6 +171,7 @@
 .products-container__list-description{
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .products-container__list-description-card {
@@ -205,13 +207,7 @@
 .products-container__list-description-text {
     color: $accent-primary-color;
     font-family: DM Sans;
-    @include font (16px, 700, 1.79, 0.04em);
+    @include font (15px, 700, 1.79, 0.04em);
     text-align: center;
     width: 200px;
 }
-
-@media screen and (max-width: 767px) { 
-    .products-container__list-description-text {
-        @include font (14px, 700, 1.52, 0.04em); 
-    }
-} 
