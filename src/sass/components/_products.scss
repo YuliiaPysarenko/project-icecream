@@ -74,6 +74,9 @@
 }
 
 .products-container__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: $accent-light-color;
     width: 40px;
     height: 40px;
@@ -83,11 +86,12 @@
     cursor: pointer;
     transition: transform 250ms; 
 
-    .products-container__list-description:focus,
+    .products-container__list-description:focus &,
     .products-container__list-description:hover & {
         background-color: $bg-gray-color;
         transition: $function-time;
         transform: rotate(-90deg);
+        border: none;
     }
 }
 
