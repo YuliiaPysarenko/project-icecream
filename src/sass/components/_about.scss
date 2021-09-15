@@ -60,9 +60,9 @@
     .about-modal & {
         height: 85vh;
         padding-bottom: 30px;
-        overflow: auto;
     
         @media (min-width: 768px) {
+            height: auto;
             justify-content: space-around;
         }
     }
@@ -73,12 +73,15 @@
 
     @media (max-width: 767px) {
         margin: 0 auto 40px;
+    }
+}
 
-        .about-modal & {
-            margin: 0 auto;
-            width: auto;
-            max-height: 120px;
-        }
+.about__image--modal {
+
+    @media (max-width: 767px) {
+        margin: 0 auto;
+        width: auto;
+        max-height: 120px;
     }
 }
 
