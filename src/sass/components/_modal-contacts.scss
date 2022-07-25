@@ -14,7 +14,7 @@
   padding-bottom: 25px;
   padding-left: 35px;
   padding-right: 35px;
-  overflow-y: scroll;
+  overflow-y: auto;
   opacity: 1;
   transition: opacity $function-time;
 
@@ -30,7 +30,7 @@
   //   Desktop
   @media screen and (min-width: 1280px) {
     min-width: 1100px;
-    max-height: 700px;
+    max-height: 735px;
   }
 }
 .modal-contacts__button-close,
