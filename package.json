@@ -6,7 +6,7 @@
   "homepage": "https://yuliiapysarenko.github.io/project-icecream/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /teem-project-icecream/"
+    "build": "parcel build src/*.html --public-url /project-icecream/"
   },
   "repository": {
     "type": "git",
